@@ -1,7 +1,7 @@
 import cv2
 
 #reading image
-image = cv2.imread("Demon_Slayer.jpg")
+image = cv2.imread("data\Demon_Slayer.jpg")
 
 #converting BGR image to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
