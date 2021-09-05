@@ -1,0 +1,13 @@
+<%- include("partials/header")-%>
+<div class="jumbotron container-fluid">
+<form action="/banking" method="POST">
+    <p class="display-4  text-primary">Banking Options </p>
+    <hr class="my-4">
+<p><a style="font-size: 200%;" class="text-success" href="/transactions">Send money</a></p>
+<p><a style="font-size: 200%;" class="text-success" href="/deposit">Deposit</a></p>
+<p><a style="font-size: 200%;" class="text-success" href="/withdraw">Withdraw</a></p>
+<p><a style="font-size: 200%;" class="text-warning" href="/dashboard">Go back</a></p>
+<p><a style="font-size: 200%;" class=" btn btn-outline-danger" role="button" href="/">Logout</a></p>
+</form>
+</div>
+<%- include("partials/footer")-%>

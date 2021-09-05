@@ -1,0 +1,17 @@
+<%- include("partials/header")-%>
+<div class="form-group ">
+<form action="/create" class="form-signin" autocomplete="off"  method="POST">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Full name" />
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone number" />
+    <input type="password" class="form-control" id="pin" name="pin" placeholder="Enter pin" />
+    <input type="password" class="form-control" id="repin" name="repin" placeholder="Retype pin" />
+    <button class="form-control btn btn-lg btn-info btn-block" type="submit">
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Create</button>
+    <a class="form-control anchor stretched-link text-dark btn btn-link " href="/">Already have an Account ?</a>
+</form>
+</div>
+<%- include("partials/footer")-%>
+
+  

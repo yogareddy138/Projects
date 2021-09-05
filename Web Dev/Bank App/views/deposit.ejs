@@ -1,0 +1,12 @@
+<%- include("partials/header")-%>
+<div class="jumbotron container-fluid">
+<p class="display-4  text-secondary">Deposit</p>
+    <hr class="my-4">
+<form action="/deposit" class="form-signin" method="POST">
+    <input type="text" class="form-control" name="amount" placeholder="Enter the money to deposit" required/>
+    <button class="form-control btn btn-lg btn-success btn-block" type="submit">
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  Deposit</button>
+    <a class="form-control btn btn-outline-warning" href="/banking" role="button">Go back</a>
+    </form>
+</div>
+<%- include("partials/footer")-%>

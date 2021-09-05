@@ -1,0 +1,18 @@
+<%- include("partials/header")-%>
+<% var stat %>
+<% var err %>
+<% var amo %>
+<div class="jumbotron container-fluid">
+    <p class="display-4 text-secondary">Send Money</p>
+        <hr class="my-4">
+<form action="/transactions" class="form-signin" method="post">
+<input class="form-control" type="text" name="reacc" placeholder="Reciver account number " required/>
+<input class="form-control" type="text" name="amount" placeholder="Enter the amount to send " required/>
+<button  class="form-control btn btn-lg btn-success btn-block" type="submit">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  Complete transaction</button>
+    <!-- <p class="form-control stretched-text text-danger btn"></p> -->
+    <p class="form-control stretched-text text-danger btn"><%= err %><%= stat %> <%=amo %></p>
+    <a class="form-control btn btn-outline-warning" href="/banking">Go back</a>
+</form>
+</div>
+<%- include("partials/footer")-%>

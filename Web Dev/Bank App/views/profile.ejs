@@ -1,0 +1,18 @@
+<%- include("partials/header")-%>
+<div class="jumbotron container-fluid">
+    <% var name %>
+    <% var address %>
+    <% var phone %>
+    <% var balance %>
+    <% var accno %>
+    <h1 class="display-4  text-primary profile">Your Profile </h1>
+    <h1 class="lead" style="font-size:200%;"><%= name %></h1>
+    <hr class="my-4">
+    <p style="font-size:200%;">Account number : <%= accno %></p>
+    <p style="font-size:200%;">Address : <%= address %></p>
+    <p style="font-size:200%;">Phone : <%= phone %></p>
+    <p style="font-size:200%;">Balance : ₹ <%= balance %></p>
+    <a style="font-size:150%;" class=" btn btn-outline-warning profile" href="/dashboard" role="button">Go back to
+        Dashboard</a>
+</div>
+<%- include("partials/footer")-%>

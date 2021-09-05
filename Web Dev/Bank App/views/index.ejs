@@ -1,0 +1,15 @@
+<%- include("partials/header")-%>
+<% var stat %>
+<div class="form-group">
+<form action="/" class="form-signin" method="POST">   
+<input class="form-control" type="text" id="accno" name="accno" placeholder="Account Number" autocomplete="off">
+<input class="form-control" type="password" id="pinl" name="pinl" placeholder="Pin Number"/>
+<button class="form-control btn btn-lg btn-info btn-block" type="submit">
+    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+      Login </button><br>
+<br>
+<p class="form-control stretched-text text-danger btn"><%= stat %></p>
+<a class="form-control btn btn-outline-success" href="/create">Create an account</a>
+</form>
+</div>
+<%- include("partials/footer")-%>

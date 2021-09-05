@@ -1,0 +1,15 @@
+<%- include("partials/header")-%>
+<% var stat %>
+<% var amo %>
+<div class="jumbotron container-fluid">
+<p class="display-4 text-secondary">Withdraw</p>
+    <hr class="my-4">
+<form action="/withdraw" class="form-signin" method="POST">
+<input class="form-control" type="text" name="amount" placeholder="Enter the amount to withdraw" required/>
+<button class="form-control btn btn-lg btn-success btn-block" type="submit">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  Withdraw</button>
+    <p class="form-control stretched-text text-danger btn"><%= stat %><%= amo %></p>
+<a class="form-control btn btn-outline-warning"  href="/banking">Go back</a>
+</form>
+</div>
+<%- include("partials/footer")-%>
